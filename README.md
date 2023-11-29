@@ -1,1 +1,1 @@
-# tech-spec
+# Tech Spec Insights
