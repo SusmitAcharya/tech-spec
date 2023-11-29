@@ -1,0 +1,11 @@
+Username
+susmit.acharya14@gmail.com
+Password
+2D58E7787D8CEFD2BA55CBB7968798A9BCF3
+Server
+smtp.elasticemail.com
+Port
+2525
+
+Token
+687bc45b-db45-4f1e-ad5f-a48eb31a0c12

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TechSpec Insights | Get to know the specs and details about every phone in the market</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        .hidden{
+            opacity: 0;
+            filter: blur(5px);
+            transition: all 2s;
+        }
+        .show{
+            filter: blur(0);
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="preloader"></div>
+
+    <div class="nav">
+        <h3 class="brand">TechSpec Insights</h3>
+        <div class="navigation">
+            <a href="" class="link active">Home</a>
+            <a href="details.html" class="link">Details</a>
+            <a href="contact.html" class="link">Contact Us</a>
+
+            <img src="graphics/hamburger-menu.png" alt="Menu" class="hamburger">
+
+            <div id="cover"></div>
+
+            <div class="ham-menu">
+                <a href="" class="ham-link active">Home</a>
+                <a href="details.html" class="ham-link">Details</a>
+                <a href="contact.html" class="ham-link">Contact Us</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+        <h1 id="title">Welcome to <br>TechSpec Insights</h1>
+        <img src="graphics/review-stars.gif" alt="" id="stars">
+        <img src="graphics/phone-mockup.jpg" alt="" class="mockup">
+    </div>
+
+    <div class="beam">
+        <img src="graphics/beam-1.png" alt="">
+        <img src="graphics/beam-2.png" alt="">
+        <img src="graphics/beam-3.png" alt="">
+        <img src="graphics/beam-4.png" alt="">
+        
+        <img src="graphics/beam-1.png" alt="">
+        <img src="graphics/beam-2.png" alt="">
+        <img src="graphics/beam-3.png" alt="">
+    </div>
+
+    <div class="sec light-grey">
+        <h2 class="heading">All your necessary details about gadgets, together now</h2>
+        <h2 class="heading">Phones, Laptops, PC's, and <b>More..<b></h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="images/vivo-x90-pro.png" alt="">
+            <h3 class="product-title">Vivo X90 Pro</h3>
+            <h4 class="product-description">Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit</h4>
+        </div>
+            
+        <div class="card">
+            <img src="images/iphone-15.png" alt="">
+            <h3 class="product-title">iPhone 15</h3>
+            <h4 class="product-description">Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit</h4>
+        </div>
+        
+        <div class="card">
+            <img src="images/galaxy-s23.png" alt="">
+            <h3 class="product-title">Galaxy S23</h3>
+            <h4 class="product-description">Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit</h4>
+        </div>
+
+        <div class="card">
+            <img src="images/macbook-pro-m3.png" alt="">
+            <h3 class="product-title">Macbook Pro M3</h3>
+            <h4 class="product-description">Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit</h4>
+        </div>
+        
+        <div class="card">
+            <img src="images/dell-xps15.png" alt="">
+            <h3 class="product-title">Dell XPS 15</h3>
+            <h4 class="product-description">Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit</h4>
+        </div>
+        
+        <div class="card">
+            <img src="images/galaxy-buds2-pro.png" alt="">
+            <h3 class="product-title">Galaxy Buds 2 Pro</h3>
+            <h4 class="product-description">Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit<br>Lorem ipsum dolor co sit amit</h4>
+        </div>
+    
+    </div>
+
+    <img src="graphics/previous-btn.png" alt="Previous" id="carousel-btn-prev" class="carousel-btn" onclick="changeCard(-1)">
+    <img src="graphics/next-btn.png" alt="Next" id="carousel-btn-next" class="carousel-btn" onclick="changeCard(1)">
+
+    <div class="sec dark-grey hidden">
+        <h2 class="heading">Why Trust Us?</h2>
+        <h3 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec aliquam ipsum. Mauris libero nisi, interdum ut facilisis sed, eleifend eget enim. Fusce accumsan cursus quam nec dictum. Sed interdum imperdiet iaculis. Integer finibus, eros nec convallis euismod, libero nisl faucibus ante, tristique facilisis leo augue ac metus. Nulla eu felis nec mi consequat porta. Praesent venenatis, arcu in ultricies interdum, nibh lectus malesuada mi, at pellentesque mi erat eleifend tortor. Sed maximus nulla non leo interdum interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas justo odio, viverra eget risus eget, vulputate dignissim est.</h3>
+    </div>
+
+    <div class="footer">
+        <h2 class="heading">TechSpec Insights</h2>
+        <h3 class="text" id="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet consequat ex, vitae interdum nunc. Quisque ut dapibus nibh. Nulla ut posuere metus, et.</h3>
+        <img src="graphics/instagram.png" alt="" class="social">
+        <img src="graphics/github.png" alt="" class="social">
+        <img src="graphics/discord.png" alt="" class="social">
+        <h6 id="copyright">&copy; 2023 Susmit Acharya</h5>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        var loader=document.getElementById("preloader");
+        window.addEventListener('load', ()=>{
+            loader.style.display="none";
+        });
+    </script>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll(".hidden");
+        hiddenElements.forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+
+</html>

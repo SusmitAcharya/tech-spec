@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TechSpec Insights | Details</title>
+    
+    <link rel="stylesheet" href="other-style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div id="preloader"></div>
+
+    <div class="nav">
+        <h3 class="brand">TechSpec Insights</h3>
+        <div class="navigation">
+            <a href="index.html" class="link">Home</a>
+            <a href="details.html" class="link">Details</a>
+            <a href="" class="link active">Contact Us</a>
+
+            <img src="graphics/hamburger-menu.png" alt="Menu" class="hamburger">
+
+            <div id="cover"></div>
+
+            <div class="ham-menu">
+                <a href="index.html" class="ham-link">Home</a>
+                <a href="details.html" class="ham-link">Details</a>
+                <a href="" class="ham-link active">Contact Us</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="beam">
+        <img src="graphics/beam-1.png" alt="">
+        <img src="graphics/beam-2.png" alt="">
+        <img src="graphics/beam-3.png" alt="">
+        <img src="graphics/beam-4.png" alt="">
+
+        <img src="graphics/beam-1.png" alt="">
+        <img src="graphics/beam-2.png" alt="">
+
+        <img src="graphics/beam-1.png" alt="">
+        <img src="graphics/beam-2.png" alt="">
+        <img src="graphics/beam-3.png" alt="">
+        <img src="graphics/beam-4.png" alt="">
+        
+        <img src="graphics/beam-1.png" alt="">
+        <img src="graphics/beam-2.png" alt="">
+    </div>
+
+    <div class="form">
+        <form>
+            <h2 class="heading">Report an Issue</h2>
+            <input type="text" placeholder="Your Name" id="name" required class="form-area">
+            <input type="email" placeholder="Your Email" id="email" required class="form-area">
+            <textarea id="message" rows="4" placeholder="How Can We Help You?" class="form-area"></textarea>
+            <button type="submit" class="submit-button" onclick="sendEmail(); reset(); return false;">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <h2 class="heading">TechSpec Insights</h2>
+        <h3 class="text" id="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet consequat ex, vitae interdum nunc. Quisque ut dapibus nibh. Nulla ut posuere metus, et.</h3>
+        <img src="graphics/instagram.png" alt="" class="social">
+        <img src="graphics/github.png" alt="" class="social">
+        <img src="graphics/discord.png" alt="" class="social">
+        <h6 id="copyright">&copy; 2023 Susmit Acharya</h5>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        var loader = document.getElementById("preloader");
+        window.addEventListener('load', function () {
+                loader.style.display = "none";
+            });
+        });
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                secureToken: "687bc45b-db45-4f1e-ad5f-a48eb31a0c12",
+                To: "susmit.acharya1425@gmail.com",
+                From: document.getElementById('email').value,
+                Subject: "TechSpec Insights Form Data",
+                Body: "Name: "+document.getElementById('name').value
+                    + "<br>Message: "+document.getElementById('message').value
+            }).then(message=>alert("Message Sent Successfully to the TechSpec Team"));
+        }
+    </script>
+
+</body>
+
+</html>

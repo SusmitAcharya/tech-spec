@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 500;
+}
+body{
+    background-color: #000000;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    animation: top-flow-in 1s normal forwards;
+}
+@keyframes top-flow-in{
+    0%{
+        top: -10vh;
+    }
+    100%{
+        top: 0;
+    }
+}
+.nav.fixed{
+    position: fixed;
+    background-color: #000000;
+    transition: 0.2s ease-out;
+}
+.nav .brand{
+    font-weight: 600;
+    font-size: 30px;
+}
+.nav .navigation a.link{
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 500;
+}
+.nav .navigation a:hover, .nav .navigation .active{
+    color: #000000 !important;
+    background-color: #ce1bff;
+    transition: ease-in-out 0.15s;
+}
+.nav .hamburger{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: none;
+    z-index: 50;
+}
+.nav .ham-menu{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 10vh;
+    left: 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    display: none;
+    transition: ease-in-out 0.5s;
+    flex-direction: column;
+    background: #000;
+}
+.nav .ham-menu .ham-link{
+    text-align: right;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    font-weight: 500;
+}
+.nav .ham-menu .active{
+    color: #000;
+    background-color: #ce1bff;
+    transition: ease-in-out 0.15s;
+}
+
+
+#cover{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 50%;
+    filter: blur(20px);
+}
+.beam{
+    width: 300px;
+    position: absolute;
+    top: 15%;
+    left: -300px;
+    justify-content: space-between;
+    z-index: 0;
+}
+.beam img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 7px;
+    animation: beam 8s linear infinite;
+}
+@keyframes beam{
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(300vh);
+        opacity: 0;
+    }
+}
+.beam img:nth-child(1){
+    animation-delay: 1s;
+}
+.beam img:nth-child(2){
+    animation-delay: 2s;
+}
+.beam img:nth-child(3){
+    animation-delay: 3s;
+}
+.beam img:nth-child(4){
+    animation-delay: 4s;
+}
+.beam img:nth-child(5){
+    animation-delay: 5s;
+}
+.beam img:nth-child(6){
+    animation-delay: 6s;
+}
+.beam img:nth-child(7){
+    animation-delay: 7s;
+}
+.beam img:nth-child(8){
+    animation-delay: 8s;
+}
+.beam img:nth-child(9){
+    animation-delay: 9s;
+}
+.beam img:nth-child(10){
+    animation-delay: 10s;
+}
+.beam img:nth-child(11){
+    animation-delay: 11s;
+}
+.beam img:nth-child(12){
+    animation-delay: 12s;
+}
+.beam img:nth-child(13){
+    animation-delay: 13s;
+}
+.beam img:nth-child(14){
+    animation-delay: 14s;
+}
+.beam img:nth-child(15){
+    animation-delay: 15s;
+}
+.beam img:nth-child(16){
+    animation-delay: 16s;
+}
+
+.cards {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    padding: 2% 7.5%;
+    display: flex;
+    flex-wrap: wrap; /* Add this property to allow the cards to wrap to the next line */
+    justify-content: space-around; /* Adjust this property based on your layout preferences */
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+
+h2.heading{
+    width: 100%;
+    text-shadow: 0 0 10px #000;
+    font-size: 2.5em;
+    position: relative;
+    text-align: left;
+    margin-top: 0;
+    z-index: 0;
+    animation: left-flow-in 1s normal forwards;
+}
+
+@keyframes left-flow-in{
+    0%{
+        left: -10vh;
+    }
+    100%{
+        left: 0;
+    }
+}
+.card {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #000;
+    border-radius: 8%;
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    padding: 1%;
+    background-color: #171717;
+    text-align: left;
+    transition: 0.5s;
+    z-index: 2;
+    animation: bottom-flow-in 1s normal forwards;
+}
+.card:hover{
+    transform: scale(1.1) !important;
+    transition: 0.5s;
+}
+
+@keyframes bottom-flow-in {
+    0% {
+        transform: translateY(10vh);
+        opacity: 0;
+        filter: blur(5px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+.card img{
+    position: relative;
+    margin: 10%;
+    width: 80%;
+    height: auto;
+}
+
+.form{
+    margin: 25vh 22.5% 25vh 22.5%;
+    padding: 2%;
+    background-image: url(images/light-bg.png);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #000;
+    border-radius: 40px;
+    width: auto;
+    height: 80vh;
+    animation: bottom-flow-in 1s normal forwards;
+    z-index: 3;
+}
+.form h2.heading{
+    animation: none;
+}
+.form .form-area{
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #171717;
+    border: 2px solid #ce1bff;
+    border-radius: 10px;
+    padding: 1%;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 20px;
+}
+.form .submit-button{
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #171717;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 1%;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 20px;
+}
+.form .submit-button:hover{
+    background: #000000;
+}
+
+.footer{
+    position: relative;
+    background-image: url(images/dark-bg.png);
+    height: 50vh;
+    width: 100%;
+    padding: 2% 7.5%;
+    z-index: 5;
+}
+.footer h2.heading{
+    text-shadow: 0 0 10px #000;
+    font-size: 2.5em;
+    position: relative;
+    text-align: left;
+    margin-top: 0;
+    z-index: 1;
+    animation: none;
+}
+.footer h3.text{
+    text-shadow:0 0 10px #000;
+    margin-top: 2%;
+}
+.footer .social{
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 25px;
+    height: auto;
+}
+.footer #copyright{
+    margin-top: 30px;
+}
+
+#preloader{
+    background: #000 url(graphics/preloader.gif) no-repeat center center;
+    background-size: 7%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+
+
+
+@media(max-width:1024px){
+    body{
+        height: auto;
+    }
+    .cards{
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    .cards .card{
+        width: 150px;
+        height: 150px;
+        padding: 2% 4%;
+        margin: 1vh 1vh;
+    }
+    .form{
+        margin: 20vh 7.5% 0 7.5%;
+        padding: 2%;
+        border-radius: 20px;
+        height: auto;
+    }
+    .form h2.heading{
+        font-size: 1.5em;
+    }
+    .footer{
+        margin-top: 10vh;
+        position: static;
+        height: auto;
+    }
+    .footer h2.heading{
+        font-size: 1.5em;
+    }
+    .footer .social{
+        width: 20px;
+    }
+}
+
+
+
+
+@media(max-width:450px){
+    body{
+        height: auto;
+    }
+    .nav, .nav.fixed{
+        padding: 4% 7%;
+    }
+    .nav .hamburger{
+        display: block;
+    }
+    .nav .link{
+        display: none;
+    }
+    .nav .hamburger{
+        display: block;
+    }
+    .cards{
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    .cards .card{
+        width: 150px;
+        height: 150px;
+        padding: 2% 4%;
+        margin: 1vh 1vh;
+    }
+    .form{
+        margin: 20vh 7.5% 0 7.5%;
+        padding: 2%;
+        border-radius: 20px;
+        height: auto;
+    }
+    .form h2.heading{
+        font-size: 1.5em;
+    }
+    .footer{
+        margin-top: 10vh;
+        position: static;
+        height: auto;
+    }
+    .footer h2.heading{
+        font-size: 1.5em;
+    }
+    .footer .social{
+        width: 20px;
+    }
+}
