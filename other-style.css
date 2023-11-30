@@ -401,9 +401,12 @@ h2.heading{
         margin-top: 10vh;
         margin-bottom: 10vh;
     }
+    .cards h2.heading{
+        font-size: 1.5em;
+    }
     .cards .card{
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         padding: 2% 4%;
         margin: 1vh 1vh;
     }
