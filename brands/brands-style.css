@@ -319,6 +319,9 @@ body{
         height: 20px;
     }
 
+    #cover{
+        height: 100%;
+    }
     .popup{
         top: 4vh;
         left: 4vh;
