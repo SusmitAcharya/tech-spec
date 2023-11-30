@@ -387,6 +387,7 @@ h2.heading:nth-child(2){
     width: 100%;
     position: relative;
     padding: 2% 7.5%;
+    z-index: 30;
 }
 .footer h2.heading{
     text-shadow: 0 0 10px #000;
@@ -501,7 +502,7 @@ h2.heading:nth-child(2){
     }   
     .footer{
         margin-top: 20vh;
-        position: static;
+        position: relative;
         height: auto;
     }
 }
@@ -613,7 +614,7 @@ h2.heading:nth-child(2){
     }
     .footer{
         margin-top: 20vh;
-        position: static;
+        position: relative;
         height: auto;
     }
     .footer h2.heading{
