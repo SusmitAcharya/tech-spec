@@ -1,5 +1,5 @@
 let nav = document.querySelector('.nav');
-
+let links=document.querySelectorAll('.link');
 let prevScrollPos = window.pageYOffset;
 
 window.addEventListener('scroll', () => {

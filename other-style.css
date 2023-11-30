@@ -225,7 +225,7 @@ h2.heading{
     padding: 1%;
     background-color: #171717;
     text-align: left;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
     z-index: 2;
     animation: bottom-flow-in 1s normal forwards;
 }
@@ -382,8 +382,11 @@ h2.heading{
     body{
         height: auto;
     }
-    .nav, .nav.fixed{
+    .nav{
         padding: 4% 7%;
+    }
+    .nav.fixed{
+        position: absolute;
     }
     .nav .hamburger{
         display: block;
