@@ -50,11 +50,11 @@ window.addEventListener("scroll", () => {
 // Separate hover effect
 cards.forEach((card) => {
     card.addEventListener("mouseenter", () => {
-        card.style.transform = `translateX(${carouselScrollValue * -1}px) scale(1.1)`;
+        card.style.transform = `translateX(${carouselScrollValue * -3}px) scale(1.1)`;
     });
 
     card.addEventListener("mouseleave", () => {
-        card.style.transform = `translateX(${carouselScrollValue * -1}px) scale(1)`;
+        card.style.transform = `translateX(${carouselScrollValue * -3}px) scale(1)`;
     });
 });
 
@@ -73,6 +73,6 @@ prevBtn.addEventListener('click', () => {
 
 function applyCardTransform() {
     cards.forEach((card, index) => {
-        card.style.transform = `translateX(${carouselScrollValue * -1}px)`;
+        card.style.transform = `translateX(${carouselScrollValue * -3}px)`;
     });
 }
