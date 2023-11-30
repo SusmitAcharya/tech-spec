@@ -569,15 +569,15 @@ h2.heading:nth-child(2){
         justify-content: space-between;
     }
     .sec.light-grey h2.heading{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .sec.light-grey h2.heading:nth-child(2){
-        margin-top: 35vh;
+        margin-top: 25vh;
     }
     .cards .card{
-        top: 117vh;
-        width: 300px;
-        height: 300px;
+        top: 115vh;
+        width: 250px;
+        height: 250px;
         padding: 3% 4%;
     }
     .carousel-btn{
